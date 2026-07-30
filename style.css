@@ -1,0 +1,22 @@
+.geo-regular {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular-italic {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.odibee-sans-regular {
+  font-family: "Odibee Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    font-family: "Geo", sans-serif;
+}
+
