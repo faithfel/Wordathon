@@ -10,12 +10,22 @@
   font-style: italic;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
 
-#startButton, #wpmTEXT, #timer, #score, #startButton {
+
+#startButton, #wpmTEXT, #timer, #score, #startButton,  #instword {
     font-family: "Geo", sans-serif;
 }
 #headerWord , #headerInput {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 #typingInput {
@@ -28,6 +38,8 @@
 .container {
   border: 1px black solid;
   max-width: 50vw;
+  max-width: 50vw;
+  min-width: 50vw;
   padding: 20px
 }
 
@@ -49,8 +61,20 @@
 
 #timer, #score {
   padding: 10px;
+  font-size: 1.5vw;
 }
 
 #headerInput {
   border: 1px black solid;
+  padding: 4px;
+}
+
+#headerWord {
+  text-align: center;
+  font-size: 5vw;
+}
+
+#instword {
+text-align: center;
+  font-size: 1.3vw;
 }
