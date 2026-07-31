@@ -71,7 +71,7 @@ function gameCycle() {
     headerInput.textContent = ">";
 
     score ++;
-    scoreText.textContent = "Score:" + score;  
+    scoreText.textContent = "Score: " + score;  
 }
 
 document.getElementById("startButton").addEventListener("click", function() {
