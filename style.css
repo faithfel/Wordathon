@@ -41,6 +41,8 @@ body {
 
 .container {
   border: 1px #fff solid;
+  background-color: #00000027;
+  backdrop-filter: blur(1px);
   max-width: 50vw;
   max-width: 50vw;
   min-width: 50vw;
@@ -57,14 +59,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+
 }
 
 #infoTab {
-  min-height: fit-content;
-  max-width: 50vw;
-  min-width: 50vw;
   display: flex;
-  position: relative
+  position: relative;
 
 }
 
@@ -82,7 +83,7 @@ body {
 #headerInput {
   border: 1px #fff solid;
   padding: 4px;
-  padding-inline-start: 30px;
+  padding-inline-start: 40px;
   font-size: 1.8vw;
 }
 
