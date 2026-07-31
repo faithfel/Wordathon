@@ -11,19 +11,20 @@
 }
 
 body {
-  background-image: url(/src/bg.jpg);
-  background-size: cover;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-color: #000000;
+  overflow: hidden;
 }
 
-
-#startButton, #wpmTEXT, #timer, #score, #startButton,  #instword {
+* {
+  color: #fff;
+}
+#startButton, #wpmTEXT, #timer, #score, #startButton,  #instword, #loreText {
     font-family: "Geo", sans-serif;
 }
 #headerWord , #headerInput {
@@ -39,17 +40,15 @@ body {
 }
 
 .container {
-  border: 4px #1969ff solid;
-  background-color: rgba(0, 0, 0, 0.449);
-  backdrop-filter: blur(3px);
-  max-height: 50vw;
+  border: 1px #fff solid;
+  max-width: 50vw;
   max-width: 50vw;
   min-width: 50vw;
   padding: 20px
 }
 
 .startcontainer {
-  border: 2px #1969ff solid;
+  border: 2px #fff solid;
   max-height: 50vw;
   max-width: 50vw;
   min-width: 50vw;
@@ -81,7 +80,7 @@ body {
 }
 
 #headerInput {
-  border: 1px black solid;
+  border: 1px #fff solid;
   padding: 4px;
   padding-inline-start: 30px;
   font-size: 1.8vw;
@@ -98,6 +97,17 @@ text-align: center;
 }
 
 #startButton {
+  font-size: 2vw;
+  background-color: transparent;
+  border: 1px #fff solid;
+}
 
-  font-size: 2.2vw;
+#banner {
+  max-height: 50vw;
+  max-width: 50vw;
+  min-width: 50vw;
+}
+
+#loreText {
+  margin: 20px;
 }
