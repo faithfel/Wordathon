@@ -4,7 +4,10 @@ const headerInput = document.querySelector('#headerInput');
 
 const scoreText = document.querySelector('#score');
 const timer = document.querySelector('#timer');
-const wpmTEXT = document.querySelector('#wpmTEXT');
+
+const startSound = new Audio('src/startAlert.mp3');
+const completeSound = new Audio('src/complete.wav');
+const typeSound = new Audio('src/typeSound.mp3');
 
 let score = 0;
 let seconds = 0;
@@ -18,7 +21,8 @@ typedByUser.addEventListener('blur', () => {
 
 //getting every input from user 
 typedByUser.addEventListener('input', (event) => {
-    headerInput.textContent = event.target.value;
+    typeSound.play();
+    headerInput.textContent = ">" + event.target.value;
     compareWord();
     
 });
@@ -26,7 +30,9 @@ typedByUser.addEventListener('input', (event) => {
 
 function start () {
     getRandomWord();
+    startSound.play();
 }
+
 //json api display as h1
 async function getRandomWord() {
 
@@ -51,16 +57,18 @@ function compareWord() {
         console.log("Word matched");
         getRandomWord();
         gameCycle()
+        completeSound.play();
     }
     else {
         console.log("Does not match.");
+        //headerInput.style.color = 'blue';
     }
 }
 
 function gameCycle() {
 
     typedByUser.value = "";
-    headerInput.textContent = "";
+    headerInput.textContent = ">";
 
     score ++;
     scoreText.textContent = "Score:" + score;  
@@ -79,6 +87,4 @@ document.getElementById("startButton").addEventListener("click", function() {
 }
 )
 
-function wpmCalc () {
 
-}
