@@ -1,1 +1,1 @@
-![Alt text](src/worldathonbanner.png)
+![Alt text](src/wordathonbanner.png)
