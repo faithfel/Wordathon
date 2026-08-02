@@ -2,6 +2,10 @@ const typedByUser = document.querySelector('#typingInput');
 const headerWord = document.querySelector('#headerWord');
 const headerInput = document.querySelector('#headerInput');
 
+const gameToggle = document.querySelector('.gameToggle');
+const startcontainer = document.querySelector('.startcontainer');
+
+
 const scoreText = document.querySelector('#score');
 const timer = document.querySelector('#timer');
 
@@ -31,6 +35,8 @@ typedByUser.addEventListener('input', (event) => {
 function start () {
     getRandomWord();
     startSound.play();
+    gameToggle.style.display = "block";
+    startcontainer.style.display = "none";
 }
 
 //json api display as h1
@@ -88,3 +94,6 @@ document.getElementById("startButton").addEventListener("click", function() {
 )
 
 
+function toogleStart() {
+
+}

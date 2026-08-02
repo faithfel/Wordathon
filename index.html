@@ -14,7 +14,8 @@
 
 </head>
 <body>
-    <img src="src/wordathonbanner.png" id="banner">
+<div class="gameToggle">
+
     <div class="container">
     <div id="infoTab">
         <h3 id="score">Score: 0</h3> <h3 id="timer">0:00</h1>
@@ -23,14 +24,16 @@
         <h1 id="headerWord">Human Word Here</h1>
         <h1 id="headerInput">> Start Typing Cadet...</h1>
     </div>
-
+</div>
     <div class="startcontainer">
+        <img src="src/wordathonbanner.png" id="banner">
+        <hr>
         <p id="loreText">
             You are an alien sent to study Earth. Your task is to learn, copy, and log down every human word you come across. A word will appear before you, and you must type it in using the "keyboard" given to you. You will be awarded a point for each word you successfully log down. This is a test of endurance, perseverance, and your willingness to learn as much about human language as you can. Good luck! Type! Cadet! Type!!!
         </p>
         <button id="startButton"onclick="start()"> Start </button>
     </div>
-    
+
 
 
     <input type="text" name="" id="typingInput" autofocus>
@@ -41,7 +44,6 @@
         <div id="stars3"></div>
         <div id="stars4"></div>
     </div>
-
-    
+</div>    
 </body>
 </html>

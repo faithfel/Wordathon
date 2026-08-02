@@ -46,11 +46,12 @@ body {
   max-width: 50vw;
   max-width: 50vw;
   min-width: 50vw;
-  padding: 20px
+  padding: 20px;
+
 }
 
 .startcontainer {
-  border: 2px #fff solid;
+  border: 1px #fff solid;
   max-height: 50vw;
   max-width: 50vw;
   min-width: 50vw;
@@ -111,4 +112,12 @@ text-align: center;
 
 #loreText {
   margin: 20px;
+}
+
+.gameToggle {
+  display: none;
+}
+
+hr {
+  width: 30vw;
 }
