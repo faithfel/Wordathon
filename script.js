@@ -35,10 +35,13 @@ typedByUser.addEventListener('input', (event) => {
 function start () {
     getRandomWord();
     startSound.play();
-    gameToggle.style.display = "block";
+    gameToggle.style.display = "flex";
     startcontainer.style.display = "none";
 }
-
+function end() {
+    gameToggle.style.display = "none";
+    startcontainer.style.display = "flex";  
+}
 //json api display as h1
 async function getRandomWord() {
 

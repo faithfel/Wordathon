@@ -24,7 +24,7 @@ body {
 * {
   color: #fff;
 }
-#startButton, #wpmTEXT, #timer, #score, #startButton,  #instword, #loreText {
+#startButton, #wpmTEXT, #timer, #score, #startButton,  #instword, #loreText, #endButton {
     font-family: "Geo", sans-serif;
 }
 #headerWord , #headerInput {
@@ -98,10 +98,11 @@ text-align: center;
   font-size: 1.3vw;
 }
 
-#startButton {
+#startButton, #endButton {
   font-size: 2vw;
   background-color: transparent;
   border: 1px #fff solid;
+  padding: 5px;
 }
 
 #banner {
@@ -120,4 +121,5 @@ text-align: center;
 
 hr {
   width: 30vw;
+  
 }
