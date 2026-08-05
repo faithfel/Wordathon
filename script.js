@@ -46,6 +46,8 @@ function end() {
     seconds = 0;
     score = 0;
     scoreText.textContent = "Score: " + score;  
+
+    //location.reload();
 }
 
 //json api display as h1
@@ -104,13 +106,10 @@ document.getElementById("startButton").addEventListener("click", function() {
 
 
 function scoreBoard () {
-    localStorage.setItem("savedscore", score);
-    let savedScore = localStorage.getItem("savedscore"); 
-    console.log(savedScore);
-
-    localStorage.setItem("savedTime", timer.innerText);
-    let savedTime = localStorage.getItem("savedTime");
-    console.log(savedTime);
+    let scoreTimer = [score, timer.innerText]
+    localStorage.setItem('scoreSaved', scoreTimer);
+    JSON.stringify(localStorage.getItem('scoreTimer'));
+    console.log(scoreTimer);
 }
 
 function resetScoreBoard() {

@@ -63,7 +63,15 @@ body {
 
 
 }
+#scoreBoard {
+  border: 1px #fff solid;
+  background-color: #00000027;
+  backdrop-filter: blur(1px);
+  max-width: 10vw;
+  min-width: 10vw;
+  padding: 20px;
 
+}
 #infoTab {
   display: flex;
   position: relative;
