@@ -110,8 +110,7 @@ function scoreBoard () {
     let scoreTimer = [score, timer.innerText]
     localStorage.setItem('scoreSaved', scoreTimer);
     JSON.stringify(localStorage.getItem('scoreTimer'));
-    console.log(scoreTimer);
-    scorediv.textContent = scoreTimer;
+    //scorediv.textContent = scoreTimer.unshift();
 }
 
 function resetScoreBoard() {
