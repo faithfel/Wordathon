@@ -14,6 +14,7 @@ const startSound = new Audio('src/startAlert.mp3');
 const completeSound = new Audio('src/complete.wav');
 const typeSound = new Audio('src/typeSound.mp3');
 
+
 let score = 0;
 let seconds = 0;
 let timerId = null;
@@ -38,6 +39,7 @@ function start () {
     startSound.play();
     gameToggle.style.display = "flex";
     startcontainer.style.display = "none";
+    scoreBoard ();
 }
 function end() {
     gameToggle.style.display = "none";
@@ -107,12 +109,22 @@ document.getElementById("startButton").addEventListener("click", function() {
 
 
 function scoreBoard () {
-    let scoreTimer = [score, timer.innerText]
+    let scoreTimer = [score, timer.innerText];
     localStorage.setItem('scoreSaved', scoreTimer);
-    JSON.stringify(localStorage.getItem('scoreTimer'));
-    //scorediv.textContent = scoreTimer.unshift();
+    JSON.stringify(localStorage.getItem('scoreTimer')) ; [];
+
+    //scorediv.textContent = scoreTimer;
+
+    let li = document.createElement("li");
+    document.createElement("li")
+    li.innerHTML = scoreTimer
+    scorediv.appendChild(li);
+
+
+    console.log(scoreTimer);
 }
 
 function resetScoreBoard() {
     localStorage.clear();  
 }
+
