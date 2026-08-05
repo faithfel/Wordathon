@@ -42,6 +42,10 @@ function end() {
     gameToggle.style.display = "none";
     startcontainer.style.display = "flex";  
     scoreBoard();
+
+    seconds = 0;
+    score = 0;
+    scoreText.textContent = "Score: " + score;  
 }
 
 //json api display as h1
@@ -92,7 +96,7 @@ document.getElementById("startButton").addEventListener("click", function() {
     timerId = setInterval(function() {
         seconds++;
         let mins = Math.floor(seconds / 60);
-        let secs = seconds % 60;
+        let secs = seconds % 60; 
         timer.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
   }, 1000);
 }
@@ -104,5 +108,11 @@ function scoreBoard () {
     let savedScore = localStorage.getItem("savedscore"); 
     console.log(savedScore);
 
-    let savedTime 
+    localStorage.setItem("savedTime", timer.innerText);
+    let savedTime = localStorage.getItem("savedTime");
+    console.log(savedTime);
+}
+
+function resetScoreBoard() {
+    localStorage.clear();  
 }
