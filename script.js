@@ -8,6 +8,7 @@ const startcontainer = document.querySelector('.startcontainer');
 
 const scoreText = document.querySelector('#score');
 const timer = document.querySelector('#timer');
+const scorediv = document.querySelector('#scoreBoard');
 
 const startSound = new Audio('src/startAlert.mp3');
 const completeSound = new Audio('src/complete.wav');
@@ -110,6 +111,7 @@ function scoreBoard () {
     localStorage.setItem('scoreSaved', scoreTimer);
     JSON.stringify(localStorage.getItem('scoreTimer'));
     console.log(scoreTimer);
+    scorediv.textContent = scoreTimer;
 }
 
 function resetScoreBoard() {
