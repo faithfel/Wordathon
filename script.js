@@ -41,7 +41,9 @@ function start () {
 function end() {
     gameToggle.style.display = "none";
     startcontainer.style.display = "flex";  
+    scoreBoard();
 }
+
 //json api display as h1
 async function getRandomWord() {
 
@@ -70,7 +72,7 @@ function compareWord() {
     }
     else {
         console.log("Does not match.");
-        //headerInput.style.color = 'blue';
+
     }
 }
 
@@ -97,6 +99,10 @@ document.getElementById("startButton").addEventListener("click", function() {
 )
 
 
-function toogleStart() {
+function scoreBoard () {
+    localStorage.setItem("savedscore", score);
+    let savedScore = localStorage.getItem("savedscore"); 
+    console.log(savedScore);
 
+    let savedTime 
 }
